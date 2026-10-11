@@ -1,4 +1,4 @@
-# omarchy-aeris-theme
+# aeris-dark-theme
 
 Aeris theme for [Omarchy](https://omarchy.org/): pink and cyan accents on a
 near-black background.
@@ -8,7 +8,7 @@ near-black background.
 ## Installation
 
 ```sh
-omarchy theme install https://github.com/woofasa/omarchy-aeris-theme.git
+omarchy theme install https://github.com/woofasa/aeris-dark-theme.git
 ```
 
 The theme is applied immediately. When installing from a git repository,
