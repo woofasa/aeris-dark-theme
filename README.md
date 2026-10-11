@@ -3,6 +3,8 @@
 Aeris theme for [Omarchy](https://omarchy.org/): pink and cyan accents on a
 near-black background.
 
+![Aeris theme preview](preview.png)
+
 ## Installation
 
 ```sh
