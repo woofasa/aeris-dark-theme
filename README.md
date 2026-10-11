@@ -1,41 +1,45 @@
 # omarchy-aeris-theme
 
-Тема Aeris для [Omarchy](https://omarchy.org/): розовые и бирюзовые акценты на почти чёрном фоне.
+Aeris theme for [Omarchy](https://omarchy.org/): pink and cyan accents on a
+near-black background.
 
-## Установка
+## Installation
 
 ```sh
 omarchy theme install https://github.com/woofasa/omarchy-aeris-theme.git
 ```
 
-Тема применится сразу. Omarchy при установке из git-репозитория пропускает
-все `*.lua` файлы, поэтому два из них нужно поставить вручную (ниже).
+The theme is applied immediately. When installing from a git repository,
+Omarchy skips every `*.lua` file, so two of them have to be installed by hand
+(see below).
 
-## Ручная установка Lua-файлов
+## Manual installation of Lua files
 
-Файлы остаются в склонированной папке `~/.config/omarchy/themes/aeris/`.
-Скопируйте их на место:
+The files stay in the cloned theme directory, `~/.config/omarchy/themes/aeris/`.
+Copy them into place:
 
 ```sh
 T=~/.config/omarchy/themes/aeris
 
-# Neovim (LazyVim): плагин aeris-nvim и colorscheme.
+# Neovim (LazyVim): aeris-nvim plugin and colorscheme.
+# For a repository install a plain copy is needed, not a symlink.
 cp "$T/neovim.lua" ~/.config/nvim/lua/plugins/theme.lua
 
-# Hyprland: отступы, скругления, blur и цвет рамок (cyan).
-# Перезапишет существующий ~/.config/hypr/looknfeel.lua, сделайте резервную копию.
+# Hyprland: gaps, rounding, blur and border colors (cyan).
+# Overwrites an existing ~/.config/hypr/looknfeel.lua, so back it up first.
 cp "$T/looknfeel.lua" ~/.config/hypr/looknfeel.lua
 hyprctl reload
 ```
 
-Требуется LazyVim и доступ к GitHub для плагина `woofasa/aeris-nvim`.
+Requires LazyVim and network access to GitHub for the `woofasa/aeris-nvim`
+plugin.
 
-## Состав
+## Contents
 
-- `colors.toml` - палитра темы
-- `shell.toml` - оформление панели и меню Omarchy
-- `icons.theme` - иконки (`Yaru-sage`)
-- `neovim.lua` - плагин Neovim (ручная установка, см. выше)
-- `looknfeel.lua` - оформление Hyprland (ручная установка, см. выше)
-- `backgrounds/` - обои, переключение: `omarchy theme bg next`
-- `preview.png` - превью в выборе тем
+- `colors.toml` - theme palette
+- `shell.toml` - Omarchy bar and menu styling
+- `icons.theme` - icon theme (`Yaru-sage`)
+- `neovim.lua` - Neovim plugin spec (manual install, see above)
+- `looknfeel.lua` - Hyprland look and feel (manual install, see above)
+- `backgrounds/` - wallpapers, cycle with `omarchy theme bg next`
+- `preview.png` - preview shown in the theme picker
