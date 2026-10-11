@@ -1,13 +1,13 @@
 return {
-  {
-    "woofasa/aeris-nvim",
-    name = "aeris",
-    priority = 1000,
-  },
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "aeris",
-    },
-  },
+	{
+		"woofasa/aeris-dark.nvim",
+		name = "aeris-dark",
+		priority = 1000,
+	},
+	{
+		"LazyVim/LazyVim",
+		opts = {
+			colorscheme = "aeris",
+		},
+	},
 }
